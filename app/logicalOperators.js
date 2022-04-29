@@ -6,12 +6,12 @@ exports.logicalOperatorsAnswers = {
    * @param {*} a
    * @param {*} b
    */
-  or: (a, b) => {},
+  or: (a, b) => a || b,
 
   /**
    * Work with logical and
    * @param {*} a
    * @param {*} b
    */
-  and: (a, b) => {},
+  and: (a, b) => a && b,
 };

@@ -1,3 +1,5 @@
+const { indexOf } = require("mocha/lib/utils");
+
 exports = typeof window === "undefined" ? global : window;
 
 exports.arraysAnswers = {
@@ -6,14 +8,14 @@ exports.arraysAnswers = {
    * @param {Array} arr
    * @param {Number} item
    */
-  indexOf: (arr, item) => {},
+  indexOf: (arr, item) => arr.indexOf(item),
 
   /**
    * Remove all instances of a value from an array
    * @param {Array} arr
    * @param {Number} item
    */
-  remove: (arr, item) => {},
+  remove: (arr, item) => arr = arr.filter(thing => thing != item),
 
   /**
    * Add an item to the end of an array

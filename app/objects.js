@@ -12,18 +12,19 @@ exports.objectsAnswers = {
   /**
    * Return the cat name
    */
-  name: () => {},
+  name: () => exports.cat.name,
 
   /**
    * Return the changed cat name
    * @param {String} name
    */
-  changeName: (name) => {},
+  changeName: (name) => {exports.cat.name = name
+  return exports.cat.name},
 
   /**
    * Add a key/value to the object
    * @param {String} key
    * @param {String} value
    */
-  add: (key, value) => {},
+  add: (key, value) => exports.cat[key] = value
 };
